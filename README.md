@@ -4,7 +4,7 @@
 
 Dans le cadre du plan de reprise d'activité (PRA) du homelab RAID-A-PORTER, le pare-feu **OPNsense** — qui assure le rôle de routeur, passerelle et serveur DHCP — tourne en VM sur l'hyperviseur **MSI**.
 
-Ce nœud MSI héberge un poste portable utilisé lors de déplacements, ce qui entraîne des extinctions fréquentes et parfois inattendues de l'hyperviseur. Lorsque MSI est éteint, tout le réseau perd sa passerelle et son DHCP.
+Ce nœud MSI subit extinctions fréquentes et parfois inattendues de l'hyperviseur. Lorsque MSI est éteint, tout le réseau perd sa passerelle et son DHCP.
 
 Pour pallier ce point de défaillance unique, un **clone de la VM OPNsense** est maintenu à jour sur l'hyperviseur **ACE**. Ce script permet à ACE de détecter automatiquement l'indisponibilité de MSI et de démarrer ce clone en relais, avant de l'éteindre de lui-même dès que MSI revient en ligne.
 

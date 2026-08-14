@@ -174,6 +174,10 @@ Cette version évite qu'un échec de `qm start` (droits, VM déjà démarrée, r
 - Ajouter une notification (email, webhook) au moment de la bascule et du retour à la normale.
 - Basculer le test de disponibilité sur l'API Proxmox plutôt qu'un simple ping, pour distinguer un hôte injoignable réseau d'un service Proxmox arrêté mais hôte allumé.
 
----
+## Repos liés
 
-*Ce script s'inscrit dans le volet PRA du homelab RAID-A-PORTER, en complément de la sauvegarde redondée via Proxmox Backup Server (PBS principal + PBS PRA).*
+- [`pbs-plan-de-reprise-pra`](https://github.com/L-VSIX/pbs-plan-de-reprise-pra) — second site de sauvegarde
+
+## Auteur
+
+**Lilian Vertueux** — [LinkedIn](https://www.linkedin.com/in/lilian-vertueux/)
